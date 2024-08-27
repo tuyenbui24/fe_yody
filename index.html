@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href=".//bootstrap.min.css" />
+  <link rel="stylesheet" href=".//shop.css" />
+  <link rel="stylesheet" href=".//fontawesome-free-6.2.1-web/css/all.min.css" />
+  <link rel="stylesheet" href=".//fontawesome-free-6.2.1-web/js/all.min.js" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+
+<body>
+  <button onclick="topFunction()" id="btn-to-top" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- header -->
+  <div style="background-color: #feefd0" class="header fixed-top d-none d-lg-block">
+    
+    <div class="container header-container">
+      <div class="topbar-top">
+        <div class="topbar-top_left">
+          <div class="logo">
+            <a class="logo-img" href="#">
+              <img src="./img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="theme-search">
+            <div class="header-search">
+              <form action="search" id="header-search-product" class="form-header_search">
+                <input class="input-search" type="text" placeholder="Tìm kiếm" />
+                <button type="submit" class="btn-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="topbar-top_right">
+          <div class="list-contact">
+            <a href="#" class="map">
+              <i class="fa-solid fa-location-dot map-icon"></i>
+              Tìm
+              <span class="number">247</span>
+              cửa hàng
+            </a>
+            <a href="" class="tell-phone">
+              <i class="fa-solid fa-phone phone-icon"></i>
+              <span style="color: #37176f">98432567</span>
+            </a>
+            <span class="free">FREE</span>
+            <span style="margin: 0 8px">-</span>
+            <span style="color: #37176f">Đặt hàng gọi</span>
+            <a href="#" class="tell-phone">
+              <i class="fa-solid fa-phone phone-icon"></i>
+              <span style="color: #37176f">0987456123</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-bottom">
+        <div class="topbar-bottom_left">
+          <div class="header-nav">
+            <ul class="item-big">
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color yellow">YODY YÊU</a>
+              </li>
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color red">COUPON XỊN</a>
+              </li>
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color">NAM</a>
+                <ul class="small-item">
+                  <li>
+                    <a href="">Quần Nam</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Nam</a>
+                  </li>
+                  <li>
+                    <a href="">Phụ Kiện Nam</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color">NỮ</a>
+                <ul class="small-item">
+                  <li>
+                    <a href="">Quần Nữ</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Nữ</a>
+                  </li>
+                  <li>
+                    <a href="">Phụ Kiện Nữ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color">TRẺ EM</a>
+                <ul class="small-item">
+                  <li>
+                    <a href="">Quần Trẻ Em</a>
+                  </li>
+                  <li>
+                    <a href="">Áo Trẻ Em</a>
+                  </li>
+                  <li>
+                    <a href="">Phụ Kiện Trẻ Em</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color">ĐỒNG PHỤC</a>
+                <ul class="small-item">
+                  <li>
+                    <a href="">NAM</a>
+                  </li>
+                  <li>
+                    <a href="">NỮ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color">BỘ SƯU TẬP</a>
+                <ul class="small-item">
+                  <li>
+                    <a href="">YOGUU</a>
+                  </li>
+                  <li>
+                    <a href="">Clean Việt Nam</a>
+                  </li>
+                  <li>
+                    <a href="">YODY Sport</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-iteam">
+                <a href="" class="a-img hover-color">BLOG</a>
+                <ul class="small-item">
+                  <li>
+                    <a href="">Em Đẹp</a>
+                  </li>
+                  <li>
+                    <a href="">Chàng Bảnh Bao</a>
+                  </li>
+                  <li>
+                    <a href="">Bé Khỏe Đẹp</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="topbar-bottom_right">
+          <div class="cart-drop">
+            <a href="#" class="cart-wrap">
+              <i class="fa-solid fa-bag-shopping icon-cart hover-color"></i>
+              <span class="count_item">0</span>
+              <span class="cart hover-color">GIỎ HÀNG</span>
+            </a>
+            <div class="cart-content">
+              <img class="shopping-icon" src="./img/blank_cart.svg" alt="" />
+              <p>Giỏ hàng của bạn trống</p>
+              <div class="cart-content_rl">
+                <a href="#" class="hover-color">Đăng ký/</a>
+                <a href="#" class="hover-color">Đăng nhập</a>
+              </div>
+              <a href="#" class="hover-color">Mua ngay</a>
+            </div>
+          </div>
+          <div class="header-login">
+            <div class="user">
+              <div class="user-login">
+                <i class="fa-solid fa-user icon-login"></i>
+                <a class="register hover-color" href="#" id="show-register-form">ĐĂNG KÝ</a>
+                <span style="padding: 0 3px">/</span>
+                <a class="login hover-color" href="#" id="show-login-form">ĐĂNG NHẬP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile fixed-top">
+    <div class="container header-mobile-container">
+      <div class="menu-button-and-user">
+        <button class="menu-button" id="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button class="mini-user-button"><i class="fa-solid fa-user icon-login"
+            style="transform: scale(1.4);"></i></button>
+      </div>
+      <div class="mobile-logo">
+        <a href="">
+          <img src="./img/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="search-and-cart">
+        <div class="mini-search-button-div mini-button">
+          
+          <button type="menu" class="mini-btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="mini-cart mini-button">
+          <button class="mini-cart-button">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="container menu-list" id="menu-list">
+      <div class="header-nav">
+        <ul class="item-big">
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color yellow">YODY YÊU</a>
+          </li>
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color red">COUPON XỊN</a>
+          </li>
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color">NAM</a>
+            <ul class="small-item">
+              <li>
+                <a href="">Quần Nam</a>
+              </li>
+              <li>
+                <a href="">Áo Nam</a>
+              </li>
+              <li>
+                <a href="">Phụ Kiện Nam</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color">NỮ</a>
+            <ul class="small-item">
+              <li>
+                <a href="">Quần Nữ</a>
+              </li>
+              <li>
+                <a href="">Áo Nữ</a>
+              </li>
+              <li>
+                <a href="">Phụ Kiện Nữ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color">TRẺ EM</a>
+            <ul class="small-item">
+              <li>
+                <a href="">Quần Trẻ Em</a>
+              </li>
+              <li>
+                <a href="">Áo Trẻ Em</a>
+              </li>
+              <li>
+                <a href="">Phụ Kiện Trẻ Em</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color">ĐỒNG PHỤC</a>
+            <ul class="small-item">
+              <li>
+                <a href="">NAM</a>
+              </li>
+              <li>
+                <a href="">NỮ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color">BỘ SƯU TẬP</a>
+            <ul class="small-item">
+              <li>
+                <a href="">YOGUU</a>
+              </li>
+              <li>
+                <a href="">Clean Việt Nam</a>
+              </li>
+              <li>
+                <a href="">YODY Sport</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-iteam">
+            <a href="" class="a-img hover-color">BLOG</a>
+            <ul class="small-item">
+              <li>
+                <a href="">Em Đẹp</a>
+              </li>
+              <li>
+                <a href="">Chàng Bảnh Bao</a>
+              </li>
+              <li>
+                <a href="">Bé Khỏe Đẹp</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="item-big-mobile-anh">
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- content -->
+  <div class="content" id="content">
+    <div class="container content-container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="">
+              <img class="d-block w-100" src="./img/4.jpg" alt="First slide" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img class="d-block w-100" src="./img/5.jpg" alt="Second slide" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img class="d-block w-100" src="./img/6.jpg" alt="Third slide" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img class="d-block w-100" src="./img/7.jpg" alt="After Third slide" />
+            </a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="BST-choose">
+        <a href="">BỘ SƯU TẬP</a>
+      </div>
+      <div class="BST-section">
+        <div id="BST-row" class="owl-carousel owl-theme BST-Ad">
+          <div class="item">
+            <a href="">
+              <img src="./img/8.jpg" alt="" />
+            </a>
+
+          </div>
+          <div class="item">
+            <a href="">
+              <img src="./img/9.jpg""
+                alt="" />
+
+            </a>
+
+          </div>
+          <div class=" item">
+              <a href="">
+                <img src="./img/10.jpg""
+                alt="" />
+
+            </a>
+
+          </div>
+          
+        </div>
+      </div>
+
+      <div class=" Choose">
+                <div class="type-choose">
+                  <div class="row type-row flex-nowrap d-flex">
+                    <div class="col-4">
+                      <div id="nam-choose" class="object-choose">Nam</div>
+                    </div>
+                    <div class="col-4">
+                      <div id="nu-choose" class="object-choose">Nữ</div>
+                    </div>
+                    <div class="col-4">
+                      <div id="tre-choose" class="object-choose">Trẻ Em</div>
+                    </div>
+                  </div>
+
+                  <div class="row nam-row">
+
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-polo-nam.jpg" alt="" />
+                        <div>Áo Polo</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-khoac-nam.jpg" alt="" />
+                        <div>Áo Khoác</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-so-mi-nam.jpg" alt="" />
+                        <div>Áo Sơ Mi</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-au-nam.jpg" alt="" />
+                        <div>Quần Âu</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-bo-nam.jpg" alt="" />
+                        <div>Quần Bò</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-dui-nam.jpg" alt="" />
+                        <div>Quần Đùi</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row nu-row">
+
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-polo-nu.jpg" alt="" />
+                        <div>Áo Polo</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-thun-nu.jpg" alt="" />
+                        <div>Áo Thun</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img//ao-khoac-nu.jpg" />
+                        <div>Áo Khoác</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-au-nu.jpg" />
+                        <div>Quần Âu</div>
+                      </a>
+                    </div>
+
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/chan-vay-nu.jpg" alt="" />
+                        <div>Chân Váy</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-dui-nu.jpg" alt="" />
+                        <div>Quần Đùi</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row tre-row">
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-polo-tre.jpg" alt="" />
+                        <div>Áo Polo</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-thun-tre.jpg" alt="" />
+                        <div>Áo Thun</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/ao-khoac-tre.jpg" alt="" />
+                        <div>Áo Khoác</div>
+                      </a>
+                    </div>
+
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-dai-tre.jpg" alt="" />
+                        <div>Quần Dài</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/quan-dui-tre.jpg" alt="" />
+                        <div>Quần Đùi</div>
+                      </a>
+                    </div>
+                    <div class="col-2">
+                      <a href="">
+                        <img src="./img/bo-do-tre.jpg" alt="" />
+                        <div>Bộ Đồ</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="moi-ve-section muc-section">
+            <div class="moi-ve-header muc-header">
+              <div class="moi-ve-cho-ban muc-click">
+                <a href="">Hàng Mới Về</a>
+              </div>
+              <div class="moi-ve-xem-them xem-them">
+                <a href="">Xem Thêm ></a>
+              </div>
+            </div>
+            <div class="moi-ve-san-pham luoi-san-pham">
+              <div class="anh-moi-ve anh-muc">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_2_image_desktop.jpg?1697788553057"
+                    alt="" />
+                </a>
+              </div>
+              <div class="anh-moi-ve anh-muc-moblie">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_2_image_mobile.jpg?1697880684129&fbclid=IwAR29EwFxLI4LMyoBc23l9TuW3HZEuH_-qa5uMN06oYbOep6lOgMsoAjSBGc"
+                    alt="" />
+                </a>
+              </div>
+              <div id="moi-ve-row" class="owl-carousel owl-theme san-pham-row">
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-thu-dong-nu-dai-tay-yody-atn6034-ddo-1-of-8.jpg?v=1697525999830"
+                      alt="" />
+                    Áo Giữ Nhiệt Nữ Cổ 3cm
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/cvn6120-xdi-01.jpg?v=1696818589170"
+                      alt="" />
+                    Chân Váy Nữ Dáng A Xẻ Đùi
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/bdk6020-den-8.jpg?v=1696647674963"
+                      alt="" />
+                    Đồ Bộ Trẻ EM Nỉ Da Cá Cơ Bản
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qam6065-ghi-4.jpg?v=1696313997927"
+                      alt="" />
+                    Quần Âu Nam Nano Melange Thêu
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/swn6004-hog-aln6030-tay-cvn6224-xgi-03.jpg?v=1697526789173"
+                      alt="" />
+                    Áo Khoác Nỉ Thể Thao Nữ Double Face Smart
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/swn6024-bee-cvn6224-nau-14.jpg?v=1696818117303"
+                      alt="" />
+                    Áo Khoác Nỉ Thể Thao Nữ
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/atn6070-bee-qjn6034-xdm-3-of-11.jpg?v=1696324820907"
+                      alt="" />
+                    Áo Thu Đông Nữ Dáng Rộng
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-thun-dai-tay-tre-em-yody-atk6022-nau-5.jpg?v=1697253682167"
+                      alt="" />
+                    Áo Thun Kid Lớn Cổ 3cm Túi Trước Ngực
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-vest-nu-ven6006-nau-1.jpg?v=1697511160793"
+                      alt="" />
+                    Vest Nữ Dáng Croptop
+                  </a>
+                  <div class="price">349.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-so-mi-nam-smm6087-xgi-6.jpg?v=1696645891003"
+                      alt="" />
+                    Sơ Mi Dài Tay Nam Cafe Túi Ốp Ngực
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/akm5037-cam-2.jpg?v=1690163735137"
+                      alt="" />
+                    Áo Khoác Gió Nam 3C Plus Năng Động
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-polo-tre-em-yody-apk6144-hog-3-of-11.jpg?v=1697535026723"
+                      alt="" />
+                    Polo Kid Cafe Dệt Tổ Ong Mickey In Ngực
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="goi-y-section muc-section">
+            <div class="goi-y-header muc-header">
+              <div class="goi-y-cho-ban muc-click">
+                <a href="">Yody Gợi Ý Cho Bạn</a>
+              </div>
+              <div class="goi-y-xem-them xem-them">
+                <a href="">Xem Thêm ></a>
+              </div>
+            </div>
+            <div class="goi-y-san-pham luoi-san-pham">
+              <div class="anh-goi-y anh-muc">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_3_image_desktop.jpg?1697788553057"
+                    alt="" />
+                </a>
+              </div>
+              <div class="anh-moi-ve anh-muc-moblie">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_3_image_mobile.jpg?1697882115189&fbclid=IwAR1ibWYzZYzpAFKP91cvBGhdb63bpEkbB4PeK9PLC5ufONf1pFD2tBtuJaM"
+                    alt="" />
+                </a>
+              </div>
+              <div id="goi-y-row" class="owl-carousel owl-theme san-pham-row">
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/akn6012-xth-5.jpg?v=1697426534613"
+                      alt="" />
+                    Áo Khoác Gió Nữ 3C Pro
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-khoac-nu-phn6014-dod-2.jpg?v=1696556320667"
+                      alt="" />
+                    Áo Phao Nữ 3S Siêu Nhẹ Tay Raglan
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-khoac-nu-akn6040-hog-7.jpg?v=1695183271947"
+                      alt="" />
+                    Áo Khoác Nữ Nỉ Cào Lông
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/spm5005-den-ao-so-mi-nam-yody-1.jpg?v=1688723412400"
+                      alt="" />
+                    Áo Sơ Mi Nam Tay Dài Thoáng Khí Siêu Mát
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qan5128-bee4.jpg?v=1696904199877"
+                      alt="" />
+                    Quần Âu Baggy Nữ Lưng Cao Vạt Chéo
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/apm6325-tra-21.jpg?v=1688954164900"
+                      alt="" />
+                    Áo Polo Nam Cafe Tổ Ong Basic
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/phn5000-hod-3.jpg?v=1673079457990"
+                      alt="" />
+                    Áo Khoác Phao Nữ Siêu Nhẹ Siêu Ấm
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-kaki-nu-lung-cao-ong-om-co-gian-nhe-qjn3072-bsa-yodyvn-6.jpg?v=1690163851410"
+                      alt="" />
+                    Quần Kaki Nữ Lưng Cao Ống Ôm Co Giãn Nhẹ
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/apm5431-vag1.jpg?v=1690163619950"
+                      alt="" />
+                    Áo Polo Nam Mắt Chim Gia Đình
+                  </a>
+                  <div class="price">349.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/akn5040-cam-4-1c797839-d544-45ec-9c47-d5bcfd0bfa70.jpg?v=1681354792093"
+                      alt="" />
+                    Áo Khoác Gió Nữ 3C Plus Năng Động
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/akm5037-cam-2.jpg?v=1690163735137"
+                      alt="" />
+                    Áo Khoác Gió Nam 3C Plus Năng Động
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/phm5001-den-4.jpg?v=1677119319310"
+                      alt="" />
+                    Áo Phao Nam Có Mũ Siêu Nhẹ Siêu Ấm
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="yody-sport-section muc-section">
+            <div class="yody-sport-header muc-header">
+              <div class="yody-sport-cho-ban muc-click">
+                <a href="">Yody Sport</a>
+              </div>
+              <div class="yody-sport-xem-them xem-them">
+                <a href="">Xem Thêm ></a>
+              </div>
+            </div>
+            <div class="yody-sport-san-pham luoi-san-pham">
+              <div class="anh-yody-sport anh-muc">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_6_image_desktop.jpg?1697795909892"
+                    alt="" />
+                </a>
+              </div>
+              <div class="anh-moi-ve anh-muc-moblie">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_6_image_mobile.jpg?1697882115189&fbclid=IwAR1KIns1V0NOqn7AwDEmcgvdbVyXx48l_7RXvOgW0gGole0gdSVUZlGnRKs"
+                    alt="" />
+                </a>
+              </div>
+              <div id="yody-sport-row" class="owl-carousel owl-theme san-pham-row">
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-khoac-nu-the-thao-tui-hop-yody-skn6016-den-bln6036-cam-ssn6022-xng-5-of-7-1.jpg?v=1696324308313"
+                      alt="" />
+                    Áo Khoác Thể Thao Nữ Túi Hộp
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/sgm6007-den-2.jpg?v=1696055813323"
+                      alt="" />
+                    Quần Gió Thể Thao Nam Never Too Late
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-gio-nam-yody-sgm6021-nav-stm6061-xlo-6-1.jpg?v=1693216231670"
+                      alt="" />
+                    Quần Gió Thể Thao Nam 4 Mùa
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/sqm5021-den-3.jpg?v=1690163777447"
+                      alt="" />
+                    Quần Short Nam Thể Thao Quốc Dân
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-polo-the-thao-nu-san6054-nav-4.jpg?v=1690163504060"
+                      alt="" />
+                    Áo Polo Thể Thao Nữ Airycool In Ngực Phối Màu
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-thun-the-thao-nam-stm6057-cam-1-4.jpg?v=1686885366203"
+                      alt="" />
+                    T-Shirt Thể Thao Nam In Vạch Phản Quang Ngực
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/sam6107-nav-4.jpg?v=1690163535197"
+                      alt="" />
+                    Áo Polo Thể Thao Nam In Vai Phản Quang
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/san6078-xmn-sjn4022-nsu-12.jpg?v=1690163534867"
+                      alt="" />
+                    Áo Polo Thể Thao Nữ In Vai Phản Quang
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/sam6045-tra-sqm5015-den-6.jpg?v=1695951972493"
+                      alt="" />
+                    Áo Polo Thể Thao Nam Airycool Nẹp Lệch In Chữ
+                  </a>
+                  <div class="price">349.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/ao-polo-nam-sam6049-den-7.jpg?v=1690163435273"
+                      alt="" />
+                    Áo Polo Thể Thao Nam Airycool In Họa Tiết Thân Trước
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-short-nam-sqm6025-ghi-8.jpg?v=1690163434893"
+                      alt="" />
+                    Quần Short Thể Thao Nam In Sau
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/stm6081-tra-17.jpg?v=1695613770323"
+                      alt="" />
+                    Áo Thun Thể Thao Nam In Ngực
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="cong-so-section muc-section">
+            <div class="cong-so-header muc-header">
+              <div class="cong-so-cho-ban muc-click">
+                <a href="">Công Sở</a>
+              </div>
+              <div class="cong-so-xem-them xem-them">
+                <a href="">Xem Thêm ></a>
+              </div>
+            </div>
+            <div class="cong-so-san-pham luoi-san-pham">
+              <div class="anh-cong-so anh-muc">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_4_image_desktop.jpg?1697795909892"
+                    alt="" />
+                </a>
+              </div>
+              <div class="anh-moi-ve anh-muc-moblie">
+                <a href="">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/home_preivew_sanpham_4_image_mobile.jpg?1697882115189&fbclid=IwAR0qacrwhbV5uKSfdlGdvS_0EnzMEGCu_UMmC3W71D0rsjScMO2zd5KVqHg"
+                    alt="" />
+                </a>
+              </div>
+              <div id="cong-so-row" class="owl-carousel owl-theme san-pham-row">
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-au-nu-qan6046-xlo-4-yodyvn-e4886976-c1e7-49f2-99d8-d7d672f426a4.jpg?v=1681106614117"
+                      alt="" />
+                    Quần Tây Nữ Ống Đứng Chun Cạp Sau
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qan5110-ndt-6.jpg?v=1690163756203"
+                      alt="" />
+                    Quần Âu Nữ Lưng Cao Ống Đứng Thêu Cạp
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/qan5178-den-5.jpg?v=1690163743557"
+                      alt="" />
+                    Quần Âu Nữ Lưng Cao Relax Pants Co Giãn Tốt
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/scn3000-xnh-4.jpg?v=1690163849413"
+                      alt="" />
+                    Áo Sơ Mi Nữ Tay Ngắn Nano Giữ Form Ít Nhăn
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/smn3007-xah-ao-so-mi-nu-yody-2-7307e529-0b4c-4b3b-a8f9-d1306b835d2a.jpg?v=1692606393540"
+                      alt="" />
+                    Áo Sơ Mi Nữ Cổ Đức Nano Kháng Khuẩn Khử Mùi
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/chan-vay-nu-cvn3192-den-1-yodyvn.jpg?v=1690163856493"
+                      alt="" />
+                    Chân Váy Ôm Công Sở Dáng Dài Mềm Mại Co Giãn
+                  </a>
+                  <div class="price">299.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/cvn6162-nau-smn6078-tra-8.jpg?v=1695365792003"
+                      alt="" />
+                    Chân Váy Nữ Bổ Mảnh
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/snm5005-den-1.jpg?v=1690163742067"
+                      alt="" />
+                    Áo Sơ Mi Nam Tay Ngắn MÁT - MỀM - MỊN
+                  </a>
+                  <div class="price">399.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-au-nam-classic-theu-yody-qam6023-ghi-4.jpg?v=1690163514597"
+                      alt="" />
+                    Quần Âu Nam Classic Thêu Yody
+                  </a>
+                  <div class="price">349.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-au-nam-cao-cap-giu-phom-co-gian-thoai-mai-qam3127-den-yodyvn-8.jpg?v=1690163845577"
+                      alt="" />
+                    Quần Âu Nam Cao Cấp Giữ Phom, Co Giãn Thoải Mái
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/quan-au-nu-qan6014-ghd-3.jpg?v=1690163506093"
+                      alt="" />
+                    Quần Tây Nữ Ống Loe Thời Thượng
+                  </a>
+                  <div class="price">499.000đ</div>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/large/100/438/408/products/cvn6120-xdi-01.jpg?v=1696818589170"
+                      alt="" />
+                    Chân Váy Nữ Dáng A Xẻ Đùi
+                  </a>
+                  <div class="price">599.000đ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- form register login -->
+      <div id="main" class="main">
+        <!-- đăng ký -->
+        <form action="" method="POST" class="form form-register" id="form-1">
+          <p class="desc">Chào mừng bạn đến với yody!</p>
+          <h3 class="heading">Đăng ký</h3>
+          <div class="spacer"></div>
+          <div class="form-group">
+            <label for="fullname" class="form-label">Tên đầy đủ</label>
+            <input type="text" placeholder="Họ và tên" class="form-control" />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" placeholder="Nhập email" class="form-control" />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password_confirmation" class="form-label">Số điện thoại</label>
+            <input placeholder="Nhập số điện thoại" type="password" class="form-control" />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input type="password" placeholder="Nhập mật khẩu" class="form-control" />
+            <span class="form-message"></span>
+          </div>
+          <button class="form-submit">Đăng ký</button>
+          <h5 style="margin: 20px 0">Hoặc đăng ký bằng</h5>
+          <a href="">
+            <img style="border-radius: 10px; border: 1px solid #feefd0" src="./img/ic_btn_facebook.svg" alt="" />
+          </a>
+          <a href=""><img style="border-radius: 10px; border: 1px solid #feefd0" src="./img/ic_btn_google.svg"
+              alt="" /></a>
+          <h4 style="margin-top: 15px">
+            Bạn đã có tài khoản?
+            <a class="login-form" href="#" id="show-login-form">ĐĂNG NHẬP</a>
+          </h4>
+        </form>
+
+        <!-- đăng nhập -->
+        <form action="" method="POST" class="form form-login" id="form-2">
+          <h3 class="heading">Đăng nhập</h3>
+          <div class="spacer"></div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" placeholder="Nhập eamil" class="form-control" />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input type="password" placeholder="Nhập mật khẩu" class="form-control" />
+            <span class="form-message"></span>
+          </div>
+          <button class="form-submit">Đăng nhập</button>
+          <h5 style="margin: 20px 0">Hoặc đăng nhập bằng</h5>
+          <a href="">
+            <img style="border-radius: 10px; border: 1px solid #feefd0" src="./img/ic_btn_google.svg" alt="" />
+          </a>
+          <a href=""><img style="border-radius: 10px; border: 1px solid #feefd0" src="./img/ic_btn_facebook.svg"
+              alt="" /></a>
+          <h4 style="margin-top: 15px">
+            Bạn chưa có tài khoản?
+            <a class="login-form" href="#" id="show-register-form">ĐĂNG KÝ</a>
+          </h4>
+        </form>
+      </div>
+      <!-- footer -->
+      <div class="footer" id="footer">
+        <div class="container footer-container">
+          <div class="row footer-top">
+            <div class="col-xl-4">
+              <p class="sum">
+                “Đặt sự hài lòng của khách hàng là ưu tiên số 1 trong mọi suy nghĩ
+                hành động của mình” là sứ mệnh, là triết lý, chiến lược.. luôn
+                cùng YODY tiến bước
+              </p>
+              <p class="text-h4 mb-2">ĐĂNG KÝ NHẬN THÔNG TIN</p>
+              <form action="">
+                <input class="input_email" type="text" placeholder="Nhập email đăng ký của bạn" />
+                <button type="submit" class="btn-sub">Đăng ký</button>
+              </form>
+              <div class="socal">
+                <a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_1.webp" alt="" /></a><a href=""
+                  class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_2.png" alt="" /></a><a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_3.png" alt="" /></a><a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_4.png" alt="" /></a><a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_5.png" alt="" /></a><a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_6.png" alt="" /></a><a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_7.png" alt="" /></a><a href="" class="socal-button">
+                  <img width="35px" height="35px" src="./img/social_8.webp" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-2">
+              <h4 class="tiltle-menu">VỂ YODY</h4>
+              <ul class="list-menu">
+                <li class="li_menu">
+                  <a href="#">Giới thiệu</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Liên hệ</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Tuyển dụng</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Tin tức</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Hệ thống của hàng</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Hàng mới về</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-3">
+              <h4 class="tiltle-menu">HỖ TRỢ KHÁCH HÀNG</h4>
+              <ul class="list-menu">
+                <li class="li_menu">
+                  <a href="#">Hướng dẫn Chọn size</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Chính sách Khách hàng thân thiết</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Chính sách Bảo hành, đổi/trả</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Chính sách Thanh toán, giao nhận</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Chính sách Đồng phục</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Chính sách Bảo mật thông tin khách hàng</a>
+                </li>
+                <li class="li_menu">
+                  <a href="#">Chính sách Sử dụng Cookies</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-3">
+              <h4 class="tiltle-menu">CÔNG TY CP THỜI TRANG YODY</h4>
+              <ul class="list-menu">
+                <li class="fone">
+                  <img src="./img/map.svg" alt="" />
+                  Địa chỉ: Đường An Định - Phường Việt Hòa - Thành phố Hải Dương -
+                  Hải Dương
+                </li>
+                <li class="fone">
+                  <img src="./img/icon_address.png" alt="" />
+                  <a class="hover-color" href="#"> Tìm cửa hàng gần bạn nhất </a>
+                </li>
+                <li class="fone">
+                  <img src="./img/icon_address.png" alt="" />
+                  <a class="hover-color" href="#">
+                    Liên hệ đặt hàng: 024 999 86 999.
+                  </a>
+                  <br />
+                  <a href="#" class="hover-color">
+                    Thắc mắc đơn hàng: 024 999 86999.</a>
+                  <br />
+                  <a href="#" class="hover-color">Góp ý khiếu nại: 1800 2086.</a>
+                </li>
+                <li class="fone">
+                  <img src="./img/email.svg" alt="" />
+                  <a class="hover-color" href="#">
+                    Email: chamsockhachhang@yody.vn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row footer-bottom">
+            <div class="footer-bottom-border"></div>
+            <h6 class="footer-bt-text">
+              © YODY - Bản quyền thuộc về Công ty cổ phần thời trang YODY
+            </h6>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Get the button
+        
+        </script>
+</body>
+<script src="./shop.js"></script>
+
+</html>
